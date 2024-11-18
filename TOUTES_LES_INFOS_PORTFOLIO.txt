@@ -1,0 +1,60 @@
+Un menu en haut avec les onglets : Accueil / Compétences / Parcours / Projets / Loisirs / Contacter-moi.
+
+---
+
+index.html : Accueil
+Photo professionnel <à gauche arrondi>
+CV De Lucas De Jesus Teixeira <à droite de la photo en grand>
+
+Étudiant en deuxième année de BUT Informatique à l’IUT de Lille, je me spécialise dans le développement et la gestion de projets informatiques. J'oriente mes études vers le développement d'application mobiles et j'ambitionne de rejoindre une alternance en développement mobile pour mettre en pratique mes compétences et de continuer à apprendre dans ce domaine.
+Au fil de mes expériences académiques et personnelles, j’ai réalisé plusieurs projets comme <la réalisation d'un projet de classification de données |hyperlien> ou <une application pour modifier les métadonnées des fichiers mp3|hyperlien>> où j'ai dû utiliser mes connaissances en gestion de projet.
+Mes points forts incluent une grande autonomie, un apprentissage rapide, et une méthodologie rigoureuse qui me permettent de m’adapter et de travailler efficacement.
+
+Pour en connaître + sur moi, n'hésitez pas à explorer ce site pour en apprendre davantage ! 
+Vous pouvez aussi me <contacter|hyperlien> et <télécharger mon CV|hyperlien> ;)
+
+---
+
+competences.html : Compétences
+Hard-skills : HTML, CSS, JavaScript, PHP, Flutter, Java, PostgreSQL, C / Maven, Bash, Scrum, Git / Linux, Windows
+Soft-skills : Attentif(Je sais travailler en équipe et je sais travailler avec mes coéquipiers)/Autonome(Mais je sais aussi travailler seul et rechercher les éléments manquants pour finaliser mon projet)/Curieux(Je sais m'informer quand j'en ai besoin et je n'hésite pas à aller vers d'autres ambitions)/Discipline(Je sais garder mon sérieux et mon calme face aux problèmes)
+Langues : Français/Langue Maternelle - Anglais/Niveau B2 - Espagnol/Niveau B1
+
+---
+
+parcours.html : Parcours
+BUT Informatique à IUT de Lille - 2023/Aujourd'hui
+<Détails du parcours + Compétences acquises>
+
+Bac STI2D option SIN à Blaise Pascal - 2022-2023
+<Détails du parcours + Compétences acquises>
+
+---
+
+projets.html : Projets
+2 volets : Professionnelles / personnelles
+Professionnelles :
+Jeu en Projet Agile : <Détails du projets, compétences acquises et lien>
+Projet de Classification de données : <Détails du projets, compétences acquises et lien>
+
+---
+
+Personnelles :
+EditDJ : <Détails du projets, compétences acquises et lien>
+
+---
+
+loisirs.html : Loisirs
+-DJing : Depuis 1an, Mixe sur des platines, Apprends et commence à produire
+-Échecs : Depuis mes 10ans, classement sur fff, Renforce ma logique et mes capacités stratégiques.
+-Musculation : Depuis 1an, renforce discipline et mettre que je lâche pas
+-Jeux vidéo (Minecraft, GTA V) : Développe la créativité.
+
+---
+
+contact.html : Contacter-Moi
+-Formulaire de contact
+-Réseaux sociaux professionnel
+-E-mail etc
+-Aperçu de mon CV numérique 
+-Téléchargement possible sur la page
