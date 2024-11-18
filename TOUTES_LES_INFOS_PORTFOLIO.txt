@@ -2,6 +2,10 @@ Un menu en haut avec les onglets : Accueil / Compétences / Parcours / Projets /
 
 ---
 
+editdj : https://cdn-gajed.nitrocdn.com/xnFRynGphiHZVmaFQUenqaOUuQKzUTfS/assets/images/optimized/rev-aa30dd9/cdn.digitaldjtips.com/app/uploads/2012/08/09151308/DJ-ROOM_2-096.jpeg
+jeux vidéos : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpwqnoflcTt4GcQo_hKNrlMet1dO28qJ-KdQ&s
+
+
 index.html : Accueil
 Photo professionnel <à gauche arrondi>
 CV De Lucas De Jesus Teixeira <à droite de la photo en grand>

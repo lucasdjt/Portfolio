@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compétences - Lucas De Jesus Teixeira</title>
     <link rel="stylesheet" href="res/style.css">
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
 </head>
-<body>
+<body onload="showTab('hard-skills')">
     <header>
         <h1>Compétences</h1>
     </header>
@@ -19,13 +26,55 @@
         <a href="contact.html">Contacter-moi</a>
     </nav>
     <div class="container">
-        <section>
+        <div class="tabs">
+            <button onclick="showTab('hard-skills')">Hard-skills</button>
+            <button onclick="showTab('soft-skills')">Soft-skills</button>
+            <button onclick="showTab('langues')">Langues</button>
+        </div>
+
+        <section id="hard-skills" class="tab-content">
             <h2>Hard-skills</h2>
-            <p>HTML, CSS, JavaScript, Flutter...</p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Flutter, PHP, Java</li>
+                <li>PostgreSQL, C, Maven</li>
+                <li>Bash, Linux, Scrum</li>
+            </ul>
+        </section>
+
+        <section id="soft-skills" class="tab-content" style="display:none;">
             <h2>Soft-skills</h2>
-            <p>Attentif, Autonome, Curieux...</p>
+            <table>
+                <tr>
+                    <th>Soft-skill</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Attentif</td>
+                    <td>Je sais travailler en équipe et collaborer efficacement avec mes coéquipiers.</td>
+                </tr>
+                <tr>
+                    <td>Autonome</td>
+                    <td>Je peux travailler seul et rechercher les informations nécessaires pour finaliser un projet.</td>
+                </tr>
+                <tr>
+                    <td>Curieux</td>
+                    <td>Je suis capable de m’informer et de m’intéresser à de nouvelles ambitions.</td>
+                </tr>
+                <tr>
+                    <td>Discipline</td>
+                    <td>Je garde mon calme et ma rigueur face aux problèmes.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="langues" class="tab-content" style="display:none;">
             <h2>Langues</h2>
-            <p>Français (Langue maternelle), Anglais (B2)...</p>
+            <ul>
+                <li><strong>Français :</strong> Langue maternelle</li>
+                <li><strong>Anglais :</strong> Niveau B2</li>
+                <li><strong>Espagnol :</strong> Niveau B1</li>
+            </ul>
         </section>
     </div>
     <footer>

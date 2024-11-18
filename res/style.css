@@ -1,17 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.container {
+    flex: 1; 
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
 header {
     background-color: #007acc;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    margin-top: auto; 
+    width: 100%;
 }
 
 nav {
@@ -32,19 +51,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.container {
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: auto;
+section {
+    margin: 2rem 0;
 }
 
-img.profile {
-    border-radius: 50%;
-    max-width: 150px;
-    margin-right: 20px;
-}
-
-button {
+button, .tabs button {
     background-color: #007acc;
     color: white;
     border: none;
@@ -54,19 +65,189 @@ button {
     font-size: 1rem;
 }
 
-button:hover {
+button:hover, .tabs button:hover {
     background-color: #005f99;
 }
 
-/* Page-specific styles */
-section {
-    margin: 2rem 0;
+img.profile {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-right: 20px;
 }
 
-footer {
-    background-color: #333;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #007acc;
     color: white;
+}
+
+.timeline-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    height: 300px;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: gray;
+    z-index: 1;
+}
+
+
+
+.arrow {
+    position: absolute;
+    right: 3px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid red;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.date {
+    position: absolute;
+    top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.date:nth-child(1) { left: 0; }
+.date:nth-child(2) { left: 25%; }
+.date:nth-child(3) { left: 50%; }
+.date:nth-child(4) { left: 75%; }
+
+.info-item {
+    position: absolute;
+    top: 70px;
+    width: 100px;
     text-align: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    background-color: #007acc;
+    color: white;
     padding: 1rem;
-    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+.tooltip a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.timeline-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.timeline-item {
+    position: relative;
+    text-align: center;
+    width: 200px;
+}
+
+.timeline-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.timeline-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    height: 300px;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line.blue {
+    left: 0;
+    width: 50%;
+    background: blue;
+}
+
+.line.red {
+    left: 50%;
+    width: 50%;
+    background: red;
+}
+
+.details {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width:200%;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.details p, .details a {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.details a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.details.hidden {
+    display: none;
 }
