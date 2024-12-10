@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Lucas De Jesus Teixeira</title>
+    <title>CV de Lucas De Jesus Teixeira</title>
     <link rel="stylesheet" href="res/style.css">
 </head>
 <body>
@@ -12,26 +12,105 @@
         <p>Étudiant en BUT Informatique</p>
     </header>
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="parcours.html">Parcours</a>
-        <a href="projets.html">Projets</a>
-        <a href="loisirs.html">Loisirs</a>
-        <a href="contact.html">Contacter-moi</a>
+        <a href="#accueil">Accueil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#projets">Projets</a>
+        <a href="#loisirs">Loisirs</a>
+        <a href="#contact">Contacter-moi</a>
     </nav>
     <div class="container">
-        <section>
+        <!-- Section Accueil -->
+        <section id="accueil">
             <img src="img/lucasdjt_selfiepro.png" alt="Photo de Lucas" class="profile">
             <h2>Bienvenue !</h2>
-            <p>Étudiant en deuxième année de BUT Informatique à l’IUT de Lille, je me spécialise dans le développement et la gestion de projets informatiques. J'oriente mes études vers le développement d'application mobiles et j'ambitionne de rejoindre une alternance en développement mobile pour mettre en pratique mes compétences et de continuer à apprendre dans ce domaine. <br>
-                Au fil de mes expériences académiques et personnelles, j’ai réalisé plusieurs projets comme <a>la réalisation d'un projet de classification de données</a> ou <a>une application pour modifier les métadonnées des fichiers mp3</a> où j'ai dû utiliser mes connaissances en gestion de projet.<br>
-                Mes points forts incluent une grande autonomie, un apprentissage rapide, et une méthodologie rigoureuse qui me permettent de m’adapter et de travailler efficacement. <br><br>
-                Pour en connaître + sur moi, n'hésitez pas à explorer ce site pour en apprendre davantage ! 
-                Vous pouvez aussi me <a>contacter</a> et <a>télécharger mon CV</a> ;)</p>
+            <p>Je suis actuellement étudiant en deuxième année de BUT Informatique, je me spécialise dans les technologies web, la programmation et la gestion de projets.</p>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="competences">
+            <h2>Compétences</h2>
+            <div class="tabs">
+                <button onclick="showTab('hard-skills')">Hard-skills</button>
+                <button onclick="showTab('soft-skills')">Soft-skills</button>
+                <button onclick="showTab('langues')">Langues</button>
+            </div>
+
+            <div id="hard-skills" class="tab-content">
+                <h3>Hard-skills</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Flutter, PHP, Java</li>
+                    <li>PostgreSQL, C, Maven</li>
+                    <li>Bash, Linux, Scrum</li>
+                </ul>
+            </div>
+            <div id="soft-skills" class="tab-content" style="display: none;">
+                <h3>Soft-skills</h3>
+                <table>
+                    <tr><th>Compétence</th><th>Description</th></tr>
+                    <tr><td>Attentif</td><td>Collaboratif et orienté équipe.</td></tr>
+                    <tr><td>Autonome</td><td>Capable de travailler seul efficacement.</td></tr>
+                    <tr><td>Curieux</td><td>Passionné par les nouvelles technologies.</td></tr>
+                    <tr><td>Discipline</td><td>Rigueur et calme face aux problèmes.</td></tr>
+                </table>
+            </div>
+            <div id="langues" class="tab-content" style="display: none;">
+                <h3>Langues</h3>
+                <ul>
+                    <li><strong>Français :</strong> Langue maternelle</li>
+                    <li><strong>Anglais :</strong> Niveau B2</li>
+                    <li><strong>Espagnol :</strong> Niveau B1</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Parcours -->
+        <section id="parcours">
+            <h2>Parcours</h2>
+            <p>Résumé de mes expériences et formations...</p>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projets">
+            <h2>Projets</h2>
+            <p>Description de mes projets réalisés...</p>
+        </section>
+
+        <!-- Section Loisirs -->
+        <section id="loisirs">
+            <h2>Loisirs</h2>
+            <p>Échecs, DJing, musculation, séries Netflix...</p>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h2>Contacter-moi</h2>
+            <form>
+                <label for="name">Nom :</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">Envoyer</button>
+            </form>
+            <h3>Me retrouver</h3>
+            <p>Email : lucasdjtpro@gmail.com</p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/lucasdjt">Mon profil LinkedIn</a></p>
+            <button>Télécharger mon CV</button>
         </section>
     </div>
     <footer>
         &copy; 2024 Lucas De Jesus Teixeira
     </footer>
+
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
