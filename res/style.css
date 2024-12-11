@@ -11,11 +11,26 @@ html, body {
     line-height: 1.6;
 }
 
-.container {
-    flex: 1;
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: auto;
+/* Titres de section (h2) */
+section:not(#accueil) h2 {
+    font-size: 2.5rem;
+    color: #007acc;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-bottom: 3px solid #005f99;
+    padding-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #007acc, #005f99);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* En-tête */
@@ -29,12 +44,10 @@ h1 {
 
 header {
     background-color: #007acc;
-    padding: 2rem;
     text-align: center;
     color: white;
     border-bottom: 5px solid #005f99;
 }
-
 
 /* Navigation */
 nav {
@@ -83,13 +96,6 @@ nav a:hover {
     background-color: #005f99;
 }
 
-.container {
-    flex: 1;
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: auto;
-}
-
 /* Sections */
 section {
     margin: 8rem 0;
@@ -120,25 +126,6 @@ img.profile {
 /* Tabs */
 .tabs {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.tab-content {
-    display: none;
-}
-
-#hard-skills, #tous {
-    display: block;
-}
-
-#competences {
-    position: relative;
-}
-
-/* Tabs */
-.tabs {
-    display: flex;
     justify-content: center;
     margin-bottom: 20px;
     gap: 10px;
@@ -158,6 +145,14 @@ img.profile {
 .tabs button:hover {
     background-color: #005f99;
     transform: scale(1.05);
+}
+
+#hard-skills, #tous {
+    display: block;
+}
+
+#competences {
+    position: relative;
 }
 
 /* Hard-skills */
@@ -256,7 +251,6 @@ img.profile {
     padding-left: 20px;
 }
 
-
 /* Projets */
 .project {
     display: flex;
@@ -332,30 +326,16 @@ img.profile {
     text-decoration: underline;
 }
 
-.timeline-item:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
+/* Section Loisirs */
+section#loisirs {
+    margin: 4rem 0;
 }
 
-.timeline-item {
-    position: relative;
+section#loisirs h2 {
     text-align: center;
-    width: 200px;
+    margin-bottom: 2rem;
 }
 
-.timeline-item img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.details.hidden {
-    display: none;
-}
-
-/* Loisirs */
 .loisir {
     display: flex;
     align-items: center;
@@ -390,17 +370,6 @@ img.profile {
 .loisir-details p {
     margin: 0;
 }
-
-/* Section Loisirs */
-section#loisirs {
-    margin: 4rem 0;
-}
-
-section#loisirs h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
 
 /* Parcours */
 .parcours-entry {
@@ -538,8 +507,6 @@ section#loisirs h2 {
     background-color: #005f99;
 }
 
-
-
 /* Section Accueil */
 .accueil-box {
     background-color: #d6eaff;
@@ -548,6 +515,7 @@ section#loisirs h2 {
     padding: 2rem;
     max-width: 75%;
     margin: 2rem auto;
+    animation: fadeIn 4s ease-in-out;
 }
 
 .accueil-content {
@@ -563,4 +531,36 @@ section#loisirs h2 {
     text-align: justify;
     margin-top: 1rem;
     line-height: 1.6;
+}
+
+#accueil a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#accueil a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Pied de page */
+footer {
+    background-color: #005f99;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+form {
+    border: solid 2px red;
+    padding: 5%;
 }

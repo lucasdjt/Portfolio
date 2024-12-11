@@ -1,7 +1,5 @@
-
-// script.js
-
-function showTab(tabId) {
+// Script pour afficher les onglets de projets
+function showProjectTab(tabId) {
     var projects = document.querySelectorAll('.project');
     projects.forEach(function(project) {
         if (tabId === 'tous' || project.classList.contains(tabId)) {
@@ -13,32 +11,24 @@ function showTab(tabId) {
 }
 
 // Par défaut, afficher tous les projets
-showTab('tous');
+document.addEventListener('DOMContentLoaded', function() {
+    showProjectTab('tous');
+});
 
-    function showInfo(id) {
-        document.getElementById(id).style.display = 'block';
-    }
-
-    function hideInfo(id) {
-        document.getElementById(id).style.display = 'none';
-    }
-
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        var formData = new FormData(this);
-    
-        fetch('send_mail.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.text())
-        .then(data => {
-            alert('Message envoyé avec succès');
-        })
-        .catch(error => {
-            alert('Erreur lors de l\'envoi du message');
-            console.error('Error:', error);
-        });
+// Script pour afficher les onglets des compétences
+function showSkillTab(tabId) {
+    var tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(function(tab) {
+        tab.style.display = 'none';
     });
-    
+    document.getElementById(tabId).style.display = 'block';
+}
+
+// Script pour afficher et masquer les infos des compétences
+function showInfo(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function hideInfo(id) {
+    document.getElementById(id).style.display = 'none';
+}
