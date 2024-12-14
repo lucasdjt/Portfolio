@@ -564,3 +564,43 @@ form {
     border: solid 2px red;
     padding: 5%;
 }
+
+.badges {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-right: 0.3rem;
+    white-space: nowrap;
+}
+
+.badge-personnel {
+    background-color: #007bff;
+    color: white;
+}
+
+.badge-professionnel {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-en-cours {
+    background-color: #ffc107;
+    color: black;
+}
+
+.badge-termines { 
+    background-color: #6c757d; 
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1rem;
+}

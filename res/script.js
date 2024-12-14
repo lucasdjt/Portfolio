@@ -2,7 +2,11 @@
 function showProjectTab(tabId) {
     var projects = document.querySelectorAll('.project');
     projects.forEach(function(project) {
-        if (tabId === 'tous' || project.classList.contains(tabId)) {
+        var badges = project.querySelectorAll('.badge');
+        var hasBadge = Array.from(badges).some(function(badge) {
+            return badge.classList.contains('badge-' + tabId.replace(' ', '-'));
+        });
+        if (tabId === 'tous' || hasBadge) {
             project.style.display = 'flex';
         } else {
             project.style.display = 'none';

@@ -11,7 +11,6 @@
     <header>
         <h1>CV de Lucas De Jesus Teixeira</h1>
         <p>Étudiant en BUT Informatique</p> 
-        <blockquote>(Le site sera terminé pour le 14/12, ceci est une version "<a href="BETA.html">BÊTA</a>")</blockquote>
     </header>
     <nav>
         <div class="nav-container">
@@ -121,71 +120,87 @@
             <h2>Projets</h2>
             <div class="tabs">
                 <button onclick="showProjectTab('tous')">Tout afficher</button>
-                <button onclick="showProjectTab('personnels')">Projets personnels</button>
-                <button onclick="showProjectTab('professionnels')">Projets professionnels</button>
+                <button onclick="showProjectTab('personnel')">Projets personnels</button>
+                <button onclick="showProjectTab('en-cours')">En cours</button>
+                <button onclick="showProjectTab('termines')">Terminés</button>
+                <button onclick="showProjectTab('professionnel')">Projets professionnels</button>
             </div>
             <div id="projets-container">
-                <div class="project personnels">
+                <div class="project">
                     <img src="img/projet_chess.png" alt="Chess">
                     <div class="details">
-                        <h3><a href="https://github.com/Draggas/Chess">Chess</a></h3>
-                        <p>Application utilisable sur mobile ou sur PC</p>
+                        <div class="badges">
+                            <span class="badge badge-personnel">Personnel</span>
+                            <span class="badge badge-en-cours">En Cours</span>
+                        </div>
+                        <h3><a href="https://github.com/Draggas/Chess" target="_blank">Chess</a></h3>
+                        <p>Jouer aux échecs sur mobile ou sur PC</p>
                     </div>
                 </div>
-                <!--
-                <div class="project personnels">
-                    <img src="img/projet_editmp3.png" alt="Indisponible pour la bêta">
+                <div class="project">
+                    <img>
                     <div class="details">
-                        <h3><a href="BETA.html">EditMP3</a></h3>
-                        <p>Description</p>
+                        <div class="badges">
+                            <span class="badge badge-personnel">Personnel</span>
+                            <span class="badge badge-en-cours">En Cours</span>
+                        </div>
+                        <h3>EditMP3</h3>
+                        <p>Permet de pouvoir modifier les métadonnées d'un fichier MP3 facilement grâce à une application EditMP3</p>
                     </div>
                 </div>
-                <div class="project personnels">
-                    <img src="img/projet_vodkgames.png" alt="Indisponible pour la bêta">
+                <div class="project">
+                    <img>
                     <div class="details">
-                        <h3><a href="BETA.html">VodkGames</a></h3>
-                        <p>Description</p>
+                        <div class="badges">
+                            <span class="badge badge-personnel">Personnel</span>
+                            <span class="badge badge-en-cours">En Cours</span>
+                        </div>
+                        <h3>Planning</h3>
+                        <p>Permet de pouvoir planifier ses tâches sur son téléphone facilement</p>
                     </div>
                 </div>
-                -->
-                <div class="project professionnels">
+                <div class="project">
                     <img src="img/projet_agile.png" alt="Agile">
                     <div class="details">
-                        <h3><a href="https://github.com/Draggas/MiniAgile_Septembre_2024">Réalisation d'un jeu en méthodologie Agile</a></h3>
-                        <p> Soldat, on vous appelle pour défaire ses monstres qui ont envahit ce monde. 
+                        <div class="badges">
+                            <span class="badge badge-professionnel">Professionnel</span>
+                            <span class="badge badge-termines">Terminé</span>
+                        </div>
+                        <h3><a href="https://github.com/Draggas/MiniAgile" target="_blank">Jeu en méthodologie Agile</a></h3>
+                        <p>Soldat, on vous appelle pour défaire ses monstres qui ont envahit ce monde. 
                             Que vous soyez Assassin, Barbare ou Mage, affrontez et battez tous ses monstres avec vos compétences et vos objets spéciaux pour affronter la reine de ce monde : LE MONSTRE ULTIME !
-                            Nom du jeu : Legend Of War, projet pour introduire l'agilité avec des sprints de 2h.</p>
+                            Nom du jeu : Legend Of War, projet pour introduire l'agilité avec des sprints de 2h.
+                        </p>
                     </div>
                 </div>
-                <div class="project professionnels">
+                <div class="project">
                     <img src="img/projet_classification.png" alt="Classification">
                     <div class="details">
-                        <h3><a href="https://github.com/Draggas/Classification">Réalisation d'une application de classification de données</a></h3>
-                        <p> Ce projet propose un outil permettant de charger et d'afficher visuellement un ensemble de données variées. 
+                        <div class="badges">
+                            <span class="badge badge-professionnel">Professionnel</span>
+                            <span class="badge badge-termines">Terminé</span>
+                        </div>
+                        <h3><a href="https://github.com/Draggas/Classification" target="_blank">Application de classification de données</a></h3>
+                        <p>Ce projet propose un outil permettant de charger et d'afficher visuellement un ensemble de données variées. 
                             Il offre également des fonctionnalités de classification, permettant de comparer et de catégoriser de nouvelles données en fonction des ensembles de données précédemment chargés. 
                             Grâce à cet outil, les utilisateurs peuvent analyser efficacement les informations qu'ils veulent.
                             Utilisation du modèle MVC, de la mise en place de la qualité de développement, d'analyses et du travail de groupe.
                         </p>
                     </div>
                 </div>
-                <div class="project professionnels">
+                <div class="project">
                     <img src="img/projet_ludo.png" alt="Ludique">
                     <div class="details">
-                        <h3><a href="https://github.com/Draggas/EduFight_Decembre2023">Réalisation d'un jeu ludoéducatif</a></h3>
-                        <p> Le jeu se nomme EduFight, l'objectif est de battre un adversaire (robot ou joueur) à l'aide de vos connaissances, répondait à des question et infliger des dégâts pour vos bonnes réponses.
+                        <div class="badges">
+                            <span class="badge badge-professionnel">Professionnel</span>
+                            <span class="badge badge-termines">Terminé</span>
+                        </div>
+                        <h3><a href="https://github.com/Draggas/EduFight" target="_blank">Jeu ludoéducatif</a></h3>
+                        <p>Le jeu se nomme EduFight, l'objectif est de battre un adversaire (robot ou joueur) à l'aide de vos connaissances, répondait à des question et infliger des dégâts pour vos bonnes réponses.
                             Vous pouvez aussi acquérir des bonus et choisir la difficulté de l'ordinateur. L'enseignant peut aussi ajouter ou supprimer des questions.
                         </p>
                     </div>
                 </div>
-                <!--
-                <div class="project professionnels">
-                    <img src="img/projet_arduino.png" alt="Indisponible pour la bêta">
-                    <div class="details">
-                        <h3><a href="BETA.html">Programmation en Arduino : Réalisation d'un distributeur automatique pour chat</a></h3>
-                        <p>Descriptionr</p>
-                    </div>
-                </div>
-                -->
             </div>
         </section>
 
