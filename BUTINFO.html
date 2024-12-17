@@ -7,24 +7,89 @@
     <link rel="stylesheet" href="res/style.css">
 </head>
 <body>
-    <header>
-        <h1>BUT INFO</h1>
-    </header>
+    
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="parcours.html">Parcours</a>
-        <a href="projets.html">Projets</a>
-        <a href="loisirs.html">Loisirs</a>
-        <a href="contact.html">Contacter-moi</a>
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#parcours">Parcours</a>
+        <a href="index.html#projets">Projets</a>
+        <a href="index.html#loisirs">Loisirs</a>
+        <a href="index.html#contact">Contacter-moi</a>
+        <a href="res/CV_LucasDeJesusTeixeira.pdf" target="_blank" class="download-cv">Télécharger Mon CV</a>
     </nav>
+
+    <header>
+        <div style="text-align: center;">
+            <img src="https://www.iut-alsace.fr/wp-content/uploads/2014/11/BUT-INFO-1.png" 
+                 alt="Logo STI2D" 
+                 style="height: 60px; display: block; margin: 0 auto;">
+            <h1 style="margin: 0; font-size: 1.5rem; text-align: center;">BUT Informatique</h1>
+            <h2 style="margin: 0; font-size: 1rem; color: lightblue; text-align: center;">
+                Parcours Réalisation d'Applications : Conception, Développement, Validation
+            </h2>
+        </div>
+    </header>
+
     <div class="container">
         <section>
-            <img src="https://i.hellowork.com/3KQwQMFrB4_sFdYrg7_qR-Q4ZPPkOeX9NIQ64OKlsQU/w:225/h:168/rt:fit/g:sm/bG9jYWw6Ly8vZWR0ZWNoL2V0YWJsaXNzZW1lbnQvbG9nby82NzQxL2VmY2E3Yjg2LWYwZWEtNGRlMS04Mjk5LTkxZDI1OGFmYmM5ZS5zdmc.svg" alt="Photo STI2D" class="profile">
-            <h3>BUT INFO</h3>
-            <p>Remplissage</p>
+            <div class="description">
+                <p>
+                    Ce cursus couvre des domaines essentiels de l'informatique, notamment le développement logiciel avec Java, la gestion de bases de données avec PostgresSQL, ainsi que le développement web. 
+                    Au-delà des compétences techniques, le programme a mis l'accent sur la gestion de groupe et le travail en équipe, ce qui m'a permis de renforcer mes capacités de collaboration et de communication. 
+                    J'ai également été formé aux méthodologies agiles, à la programmation en C, à l'algorithmique, à la rédaction de documents et la résolution de problèmes tout en augmentant la qualité de mon code. 
+                    Tout ces compétences ont été évalués durant diverses projets réalisés pendant ce cursus dont certains que vous avez juste en dessous.
+                </p>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2>Compétences</h2>
+            <div class="skills">
+                <div class="skill">Java</div>
+                <div class="skill">Méthodologie Agile</div>
+                <div class="skill">C</div>
+                <div class="skill">HTML/CSS</div>
+                <div class="skill">PostgresSQL</div>
+                <div class="skill">Linux</div>
+                <div class="skill">Maven</div>
+            </div>
+        </section>
+
+        <section id="projets">
+                <div class="project">
+                    <img src="img/projet_agile.png" alt="Agile">
+                    <div class="details">
+                        <h3><a href="https://github.com/Draggas/MiniAgile" target="_blank">Jeu en méthodologie Agile</a></h3>
+                        <p>Soldat, on vous appelle pour défaire ses monstres qui ont envahit ce monde. 
+                            Que vous soyez Assassin, Barbare ou Mage, affrontez et battez tous ses monstres avec vos compétences et vos objets spéciaux pour affronter la reine de ce monde : LE MONSTRE ULTIME !
+                            Nom du jeu : Legend Of War, projet pour introduire l'agilité avec des sprints de 2h.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/projet_classification.png" alt="Classification">
+                    <div class="details">
+                        <h3><a href="https://github.com/Draggas/Classification" target="_blank">Application de classification de données</a></h3>
+                        <p>Ce projet propose un outil permettant de charger et d'afficher visuellement un ensemble de données variées. 
+                            Il offre également des fonctionnalités de classification, permettant de comparer et de catégoriser de nouvelles données en fonction des ensembles de données précédemment chargés. 
+                            Grâce à cet outil, les utilisateurs peuvent analyser efficacement les informations qu'ils veulent.
+                            Utilisation du modèle MVC, de la mise en place de la qualité de développement, d'analyses et du travail de groupe.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/projet_ludo.png" alt="Ludique">
+                    <div class="details">
+                        <h3><a href="https://github.com/Draggas/EduFight" target="_blank">Jeu ludoéducatif</a></h3>
+                        <p>Le jeu se nomme EduFight, l'objectif est de battre un adversaire (robot ou joueur) à l'aide de vos connaissances, répondait à des question et infliger des dégâts pour vos bonnes réponses.
+                            Vous pouvez aussi acquérir des bonus et choisir la difficulté de l'ordinateur. L'enseignant peut aussi ajouter ou supprimer des questions.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
+
     <footer>
         &copy; 2024 Lucas De Jesus Teixeira
     </footer>

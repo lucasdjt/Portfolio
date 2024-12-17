@@ -604,3 +604,82 @@ h2 {
     text-align: center;
     margin-top: 1rem;
 }
+
+.description {
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.2rem;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.skill {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.image-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.image-description img {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.image-description .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.resized-image {
+    width: 150px;
+    height: auto;
+}
+
+.details p {
+    display: none; /* Masquer par défaut */
+}
+
+.details:hover p {
+    display: block;
+}
+
+.project {
+    position: relative; /* Contexte de positionnement */
+}
+
+.github-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+}
+
+.github-logo {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.github-link:hover .github-logo {
+    opacity: 1;
+}
