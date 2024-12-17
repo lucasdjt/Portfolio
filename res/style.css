@@ -515,7 +515,7 @@ section#loisirs h2 {
     padding: 2rem;
     max-width: 75%;
     margin: 2rem auto;
-    animation: fadeIn 4s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .accueil-content {
