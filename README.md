@@ -1,11 +1,4 @@
 # PRIORITE :
-- Mettre une session sur le stage dans l'accueil
--- Demande de stage
--- Mettre les dates du stages (10 semaines) avril 2025 à juin 2025
-
-- Ajout Icone LinkedIn, GitLab, GitHub, Email
-
-- Ajout Captcha
 
 - Ajout Email Universitaire
 
@@ -23,6 +16,7 @@
 
 - Mettre les compétences dans des ronds
 
+- Adapter les pages externes à l'index.html (description / compétences...)
 - Améliorer les textes + Corriger les fautes
 
 # SI TEMPS DISPO :
@@ -40,7 +34,9 @@
 - Adapter CSS
 
 # SECONDAIRES :
+- Formulaire qui marche
 - Ajout flèches pour afficher description de projets
+- Mettre le stage dans une session à part
 - Ajout Thème Dark/Light
 - Ajout Logo Animé pour les projets
 - Longues descriptions + Ajouter barre de glissement

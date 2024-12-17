@@ -546,14 +546,17 @@ section#loisirs h2 {
 
 
 /* Pied de page */
+/* Pied de page */
 footer {
     background-color: #005f99;
     color: white;
     text-align: center;
     padding: 1rem;
     position: relative;
-    bottom: 0;
     width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
 }
 
 footer p {
@@ -682,4 +685,48 @@ h2 {
 
 .github-link:hover .github-logo {
     opacity: 1;
+}
+
+.alerte-stage {
+    background-color: #ffcccc; /* Fond rouge clair */
+    border: 2px solid #ff0000; /* Bordure rouge */
+    border-radius: 10px; /* Bords arrondis */
+    padding: 1rem; /* Espacement interne */
+    max-width: 75%; /* Largeur maximale */
+    margin: 1rem auto; /* Centrer et espacer l'alerte */
+    text-align: center; /* Centrer le texte */
+    color: #b30000; /* Couleur du texte */
+    font-size: 1.2rem; /* Taille du texte */
+    animation: fadeIn 2s ease-in-out; /* Animation d'apparition */
+}
+
+.alerte-stage a {
+    color: #b30000; /* Couleur des liens */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    transition: color 0.3s ease; /* Transition de couleur */
+}
+
+.alerte-stage a:hover {
+    color: #ff0000; /* Couleur des liens au survol */
+    text-decoration: underline; /* Souligner les liens au survol */
+}
+
+.nav-container, .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
 }

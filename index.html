@@ -23,8 +23,15 @@
                 <a href="#contact">Contacter-moi</a>
             </div>
             <a href="res/CV_LucasDeJesusTeixeira.pdf" target="_blank" class="download-cv">Télécharger Mon CV</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lucasdjt" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&s" alt="LinkedIn"></a>
+                <a href="https://gitlab.univ-lille.fr/lucas.de-jesus-teixeira.etu" target="_blank"><img src="https://gitlab.univ-lille.fr/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="GitLab"></a>
+                <a href="https://github.com/Draggas" target="_blank"><img src="https://github.com/fluidicon.png" alt="GitHub"></a>
+                <a href="mailto:lucasdjtpro@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email"></a>
+            </div>
         </div>
     </nav>
+    
     
     <div class="container">
         <!-- Section Accueil -->
@@ -43,6 +50,13 @@
             </div>
         </section>
     
+        <section class="alerte-stage">
+            <p>
+                Je suis actuellement à la recherche d'un <strong>stage dans le développement mobile</strong>, 
+                d'avril à juin 2024 pour une durée de 10 semaines.
+            </p>
+        </section>
+
         <!-- Section Compétences -->
         <section id="competences">
             <h2>Compétences</h2>
@@ -293,7 +307,7 @@
             <a href="res/CV_LucasDeJesusTeixeira.pdf" target="_blank">
                 <button type="button">Télécharger Mon CV</button>
             </a>
-            <form id="contact-form">
+            <form id="contact-form" action="formulaire.php" method="POST">
                 <label for="name">Nom Prénom :</label><br>
                 <input type="text" id="name" name="name" required><br><br>
                 <label for="email">Email :</label><br>
@@ -302,14 +316,24 @@
                 <input type="text" id="subject" name="subject" required><br><br>
                 <label for="message">Message :</label><br>
                 <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <div class="g-recaptcha" data-sitekey="6LePC54qAAAAALSSRcEH-hOFGFr5dVCm6-CZfw_z"></div><br>
                 <button type="submit">Envoyer</button>
             </form>
         </section>
 
         <!-- Pied de page -->
         <footer>
-            <p>&copy; 2024 Lucas De Jesus Teixeira. Tous droits réservés.</p>
+            <div class="footer-content">
+                <p>&copy; 2024 Lucas De Jesus Teixeira. Tous droits réservés.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/lucasdjt" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&s" alt="LinkedIn"></a>
+                    <a href="https://gitlab.univ-lille.fr/lucas.de-jesus-teixeira.etu" target="_blank"><img src="https://gitlab.univ-lille.fr/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="GitLab"></a>
+                    <a href="https://github.com/Draggas" target="_blank"><img src="https://github.com/fluidicon.png" alt="GitHub"></a>
+                    <a href="mailto:lucasdjtpro@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email"></a>
+                </div>
+            </div>
         </footer>
+
     </div>
 </body>
 </html>
