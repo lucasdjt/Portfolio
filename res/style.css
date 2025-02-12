@@ -640,7 +640,7 @@ h2 {
     opacity: 1;
 }
 
-.alerte-stage {
+.alerte {
     background-color: #ffcccc; /* Fond rouge clair */
     border: 2px solid #ff0000; /* Bordure rouge */
     border-radius: 10px; /* Bords arrondis */
@@ -653,15 +653,28 @@ h2 {
     animation: fadeIn 2s ease-in-out; /* Animation d'apparition */
 }
 
-.alerte-stage a {
+.alerte a {
     color: #b30000; /* Couleur des liens */
     text-decoration: none; /* Supprimer la décoration des liens */
     transition: color 0.3s ease; /* Transition de couleur */
 }
 
-.alerte-stage a:hover {
+.alerte a:hover {
     color: #ff0000; /* Couleur des liens au survol */
     text-decoration: underline; /* Souligner les liens au survol */
+}
+
+.alternance {
+    border: 2px solid #0048ff;
+    color: #0048ff;
+}
+
+.alternance a {
+    color: #0048ff;
+}
+
+.alternance a:hover {
+    color: #0048ff;
 }
 
 .nav-container, .footer-content {
