@@ -1,0 +1,468 @@
+/* Variables de couleurs */
+:root {
+    --background-color: #ffffff;
+    --card-bg: rgba(64, 224, 208, 0.2);
+    --card-border: rgba(64, 224, 208, 0.3);
+    --text-color: #000000;
+    --link-color: #007BFF;
+    --font-family: 'Roboto', sans-serif;
+    --tooltip-bg: rgba(0, 0, 0, 0.8);
+    --tooltip-text: #ffffff;
+    --animation-duration: 0.6s;
+}
+
+/* Style général */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(64, 224, 208, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    animation: slideDown var(--animation-duration) ease-out;
+}
+
+.nav-logo {
+    position: relative;
+    margin-right: 20px;
+}
+
+.draggas-logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.draggas-logo:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: var(--tooltip-bg);
+    color: var(--tooltip-text);
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav-logo:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--link-color);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar a:hover {
+    color: var(--link-color);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.section-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--card-border);
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+.section {
+    padding: 120px 20px 60px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp var(--animation-duration) forwards;
+}
+
+.section:nth-of-type(even) {
+    animation-delay: 0.2s;
+}
+
+.section:nth-of-type(odd) {
+    animation-delay: 0.4s;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--card-border);
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    color: var(--text-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo de profil */
+.profile-photo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--card-border);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Accueil spécifique */
+.accueil-card h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.accueil-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Formations */
+.formation-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft var(--animation-duration) forwards;
+}
+
+.formation-item:nth-of-type(even) {
+    transform: translateX(20px);
+    animation: fadeInRight var(--animation-duration) forwards;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Table Expériences Professionnelles */
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn var(--animation-duration) forwards;
+}
+
+.experience-table th, .experience-table td {
+    border: 1px solid var(--card-border);
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    transition: background-color 0.3s;
+}
+
+.experience-table th {
+    background-color: rgba(64, 224, 208, 0.4);
+    color: var(--text-color);
+}
+
+.experience-table tr:nth-child(even) {
+    background-color: rgba(64, 224, 208, 0.1);
+}
+
+.experience-table tr:hover {
+    background-color: rgba(64, 224, 208, 0.2);
+}
+
+/* Styles pour les tableaux Réalisations et Loisirs */
+.realisations-table, .loisirs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn var(--animation-duration) forwards;
+}
+
+.realisations-table th, .realisations-table td,
+.loisirs-table th, .loisirs-table td {
+    border: 1px solid var(--card-border);
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    transition: background-color 0.3s;
+}
+
+.realisations-table th, .loisirs-table th {
+    background-color: rgba(64, 224, 208, 0.4);
+    color: var(--text-color);
+}
+
+.realisations-table tr:nth-child(even), .loisirs-table tr:nth-child(even) {
+    background-color: rgba(64, 224, 208, 0.1);
+}
+
+.realisations-table tr:hover, .loisirs-table tr:hover {
+    background-color: rgba(64, 224, 208, 0.2);
+}
+
+/* Styles pour les lignes de sous-section */
+.sub-section-row {
+    display: none;
+}
+
+.sub-section {
+    padding: 10px 15px;
+    background-color: rgba(64, 224, 208, 0.05);
+    border-radius: 5px;
+    animation: fadeInDown 0.5s forwards;
+}
+
+.sub-section p {
+    margin: 10px 0;
+}
+
+.sub-section ul {
+    margin-left: 20px;
+}
+
+/* Animation pour les sous-sections */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles pour les boutons de bascule */
+.toggle-btn {
+    background-color: var(--link-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sous-sections visibles */
+.sub-section-row.show {
+    display: table-row;
+}
+
+/* Compétences et Loisirs */
+.competences-list h3 {
+    margin-top: 10px;
+}
+
+.competences-list ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Liens */
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Pied de page */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(64, 224, 208, 0.8);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--card-border);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: slideUp var(--animation-duration) forwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 80px 10px 40px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .experience-table th, .experience-table td,
+    .realisations-table th, .realisations-table td,
+    .loisirs-table th, .loisirs-table td {
+        padding: 10px;
+    }
+
+    .sub-section-row {
+        display: none;
+    }
+
+    .sub-section-row.show {
+        display: table-row;
+    }
+
+
+
+
+
+}
