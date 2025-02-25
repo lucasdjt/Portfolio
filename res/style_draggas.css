@@ -1,8 +1,8 @@
 /* Variables de couleurs */
 :root {
     --background-color: #ffffff;
-    --card-bg: rgba(64, 224, 208, 0.2);
-    --card-border: rgba(64, 224, 208, 0.3);
+    --card-bg: rgba(64, 117, 224, 0.2);
+    --card-border: rgba(64, 117, 224, 0.3);
     --text-color: #000000;
     --link-color: #007BFF;
     --font-family: 'Roboto', sans-serif;
@@ -29,7 +29,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(64, 224, 208, 0.8);
+    background: rgba(64, 117, 224, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -37,11 +37,6 @@ body {
     align-items: center;
     padding: 10px 20px;
     animation: slideDown var(--animation-duration) ease-out;
-}
-
-.nav-logo {
-    position: relative;
-    margin-right: 20px;
 }
 
 .draggas-logo {
@@ -249,16 +244,16 @@ body {
 }
 
 .experience-table th {
-    background-color: rgba(64, 224, 208, 0.4);
+    background-color: rgba(64, 117, 224, 0.4);
     color: var(--text-color);
 }
 
 .experience-table tr:nth-child(even) {
-    background-color: rgba(64, 224, 208, 0.1);
+    background-color: rgba(64, 117, 224, 0.1);
 }
 
 .experience-table tr:hover {
-    background-color: rgba(64, 224, 208, 0.2);
+    background-color: rgba(64, 117, 224, 0.2);
 }
 
 /* Styles pour les tableaux Réalisations et Loisirs */
@@ -279,16 +274,16 @@ body {
 }
 
 .realisations-table th, .loisirs-table th {
-    background-color: rgba(64, 224, 208, 0.4);
+    background-color: rgba(64, 117, 224, 0.4);
     color: var(--text-color);
 }
 
 .realisations-table tr:nth-child(even), .loisirs-table tr:nth-child(even) {
-    background-color: rgba(64, 224, 208, 0.1);
+    background-color: rgba(64, 117, 224, 0.1);
 }
 
 .realisations-table tr:hover, .loisirs-table tr:hover {
-    background-color: rgba(64, 224, 208, 0.2);
+    background-color: rgba(64, 117, 224, 0.2);
 }
 
 /* Styles pour les lignes de sous-section */
@@ -298,7 +293,7 @@ body {
 
 .sub-section {
     padding: 10px 15px;
-    background-color: rgba(64, 224, 208, 0.05);
+    background-color: rgba(64, 117, 224, 0.05);
     border-radius: 5px;
     animation: fadeInDown 0.5s forwards;
 }
@@ -368,7 +363,7 @@ body {
 .footer {
     text-align: center;
     padding: 20px;
-    background: rgba(64, 224, 208, 0.8);
+    background: rgba(64, 117, 224, 0.8);
     backdrop-filter: blur(10px);
     border-top: 1px solid var(--card-border);
     position: relative;
@@ -465,4 +460,175 @@ body {
 
 
 
+}
+
+/* AJOUT */
+
+
+.social-icons a {
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-content .social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+#contact button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #005f99;
+}
+
+
+section#loisirs {
+    margin: 4rem 0;
+}
+
+section#loisirs h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section#loisirs p {
+    text-align: justify;
+}
+
+.loisir {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.loisir img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.loisir-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loisir-details h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.loisir-details p {
+    margin: 0;
+}
+
+.details p {
+    display: none;
+}
+
+.details:hover p {
+    display: block;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.project {
+    position: relative;
+}
+
+
+button, .tabs button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover, .tabs button:hover {
+    background-color: #005f99;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tabs button {
+    background-color: #007acc;
+    color: white;
+    border: 2px solid #005f99;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tabs button:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
 }
