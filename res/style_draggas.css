@@ -745,3 +745,7 @@ button:hover, .tabs button:hover {
 #alerte {
     padding: 0;
 }
+
+.competence-en-cours {
+    color: grey;
+}
