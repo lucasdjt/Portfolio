@@ -621,15 +621,13 @@ button:hover, .tabs button:hover {
     text-align: center;
     border-radius: 6px;
     padding: 10px;
-    position: relative;
-    left: 0;
     z-index: 1;
     transition: opacity 0.3s;
+    position: relative;
 }
 
 .badges {
-    display: flex;
-    justify-content: space-between;
+    display: inline;
     margin-bottom: 0.5rem;
 }
 
