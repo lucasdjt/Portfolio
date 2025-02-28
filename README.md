@@ -25,3 +25,8 @@ Vous pouvez accéder au site directement depuis ce lien :
 **__Auteur :__** Lucas De Jesus Teixeira
 
 **Tout droits réservés**
+
+## Manquants :
+Adaptation Mobile avec le CSS :
+- Projets : balises En Cours / ... / Date / Texte (adapté aussi loisirs); 
+- Vers Mi-Mars : React --> Recréation de l'interface du Portfolio au complet

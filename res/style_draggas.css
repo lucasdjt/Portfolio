@@ -550,10 +550,6 @@ section#loisirs p {
     display: none;
 }
 
-.details:hover p {
-    display: block;
-}
-
 .project {
     display: flex;
     align-items: flex-start;
@@ -619,7 +615,7 @@ button:hover, .tabs button:hover {
 }
 
 .tooltip {
-    visibility: hidden;
+    display:none;
     background-color: var(--tooltip-bg);
     color: var(--tooltip-text);
     text-align: center;
@@ -628,13 +624,7 @@ button:hover, .tabs button:hover {
     position: relative;
     left: 0;
     z-index: 1;
-    opacity: 0;
     transition: opacity 0.3s;
-}
-
-.loisir .tooltip {
-    visibility: visible;
-    opacity: 1;
 }
 
 .badges {
@@ -748,4 +738,8 @@ button:hover, .tabs button:hover {
 
 .competence-en-cours {
     color: grey;
+}
+
+.titleDonnee:hover {
+    text-decoration: underline;
 }
