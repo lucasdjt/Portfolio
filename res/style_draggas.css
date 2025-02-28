@@ -6,8 +6,8 @@
     --text-color: #000000;
     --link-color: #007BFF;
     --font-family: 'Roboto', sans-serif;
-    --tooltip-bg: rgba(0, 0, 0, 0.8);
-    --tooltip-text: #ffffff;
+    --tooltip-bg: rgba(64, 117, 224, 0.2);
+    --tooltip-text: #000000;
     --animation-duration: 0.6s;
 }
 
