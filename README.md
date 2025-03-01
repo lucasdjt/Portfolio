@@ -25,3 +25,6 @@ Vous pouvez accéder au site directement depuis ce lien :
 **__Auteur :__** Lucas De Jesus Teixeira
 
 **Tout droits réservés**
+
+## Manquants :
+- Vers Mi-Mars : React --> Recréation de l'interface du Portfolio au complet
