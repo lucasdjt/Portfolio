@@ -39,17 +39,6 @@ body {
     animation: slideDown var(--animation-duration) ease-out;
 }
 
-.draggas-logo {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.draggas-logo:hover {
-    transform: scale(1.1);
-}
-
 .navbar ul {
     list-style: none;
     display: flex;
@@ -89,29 +78,6 @@ body {
 
 .navbar a:hover::after {
     width: 100%;
-}
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.section-image {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    background: var(--card-bg);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--card-border);
-    padding: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.section-image:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Sections */
@@ -212,85 +178,6 @@ body {
     object-fit: cover;
 }
 
-/* Table Expériences Professionnelles */
-.experience-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    animation: fadeIn var(--animation-duration) forwards;
-}
-
-.experience-table th, .experience-table td {
-    border: 1px solid var(--card-border);
-    padding: 15px;
-    text-align: left;
-    vertical-align: top;
-    transition: background-color 0.3s;
-}
-
-.experience-table th {
-    background-color: rgba(64, 117, 224, 0.4);
-    color: var(--text-color);
-}
-
-.experience-table tr:nth-child(even) {
-    background-color: rgba(64, 117, 224, 0.1);
-}
-
-.experience-table tr:hover {
-    background-color: rgba(64, 117, 224, 0.2);
-}
-
-/* Styles pour les tableaux Réalisations et Loisirs */
-.realisations-table, .loisirs-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    animation: fadeIn var(--animation-duration) forwards;
-}
-
-.realisations-table th, .realisations-table td,
-.loisirs-table th, .loisirs-table td {
-    border: 1px solid var(--card-border);
-    padding: 15px;
-    text-align: left;
-    vertical-align: top;
-    transition: background-color 0.3s;
-}
-
-.realisations-table th, .loisirs-table th {
-    background-color: rgba(64, 117, 224, 0.4);
-    color: var(--text-color);
-}
-
-.realisations-table tr:nth-child(even), .loisirs-table tr:nth-child(even) {
-    background-color: rgba(64, 117, 224, 0.1);
-}
-
-.realisations-table tr:hover, .loisirs-table tr:hover {
-    background-color: rgba(64, 117, 224, 0.2);
-}
-
-/* Styles pour les lignes de sous-section */
-.sub-section-row {
-    display: none;
-}
-
-.sub-section {
-    padding: 10px 15px;
-    background-color: rgba(64, 117, 224, 0.05);
-    border-radius: 5px;
-    animation: fadeInDown 0.5s forwards;
-}
-
-.sub-section p {
-    margin: 10px 0;
-}
-
-.sub-section ul {
-    margin-left: 20px;
-}
-
 /* Animation pour les sous-sections */
 @keyframes fadeInDown {
     from {
@@ -301,47 +188,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Styles pour les boutons de bascule */
-.toggle-btn {
-    background-color: var(--link-color);
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-}
-
-.toggle-btn:hover {
-    background-color: #0056b3;
-}
-
-/* Sous-sections visibles */
-.sub-section-row.show {
-    display: table-row;
-}
-
-/* Compétences et Loisirs */
-.competences-list h3 {
-    margin-top: 10px;
-}
-
-.competences-list ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-/* Liens */
-.link {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
 }
 
 /* Pied de page */
@@ -427,28 +273,7 @@ body {
         height: 120px;
     }
 
-    .experience-table th, .experience-table td,
-    .realisations-table th, .realisations-table td,
-    .loisirs-table th, .loisirs-table td {
-        padding: 10px;
-    }
-
-    .sub-section-row {
-        display: none;
-    }
-
-    .sub-section-row.show {
-        display: table-row;
-    }
-
-
-
-
-
 }
-
-/* AJOUT */
-
 
 .social-icons a {
     margin: 0 5px;
