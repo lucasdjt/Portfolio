@@ -3,6 +3,7 @@
     --background-color: #ffffff;
     --card-bg: rgba(64, 117, 224, 0.2);
     --card-border: rgba(64, 117, 224, 0.3);
+    --alerte: rgb(255, 0, 0);
     --text-color: #000000;
     --link-color: #007BFF;
     --font-family: 'Roboto', sans-serif;
@@ -540,29 +541,31 @@ button:hover, .tabs button:hover {
     text-decoration: underline;
 }
 
-#alerte div {
-    background: rgb(235, 213, 213)
-}
-
-#alerte a {
-    color: #b30000;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-#alerte a:hover {
-    color: #ff0000;
-    text-decoration: underline;
-}
-
-#alerte {
-    padding: 0;
-}
-
 .competence-en-cours {
     color: grey;
 }
 
 .titleDonnee:hover {
     text-decoration: underline;
+}
+
+.alerte div {
+    background: rgb(235, 213, 213)
+}
+
+.alerte a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.alerte a:hover {
+    text-decoration: underline;
+}
+
+.alerte {
+    padding: 0;
+}
+
+.red {
+    color: var(--alerte) !important;
 }
