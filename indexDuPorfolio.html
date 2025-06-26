@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Numérique - Lucas DE JESUS TEIXEIRA</title>
+    <link rel="icon" href="https://www.svgrepo.com/show/184143/java.svg">
+    <link rel="stylesheet" href="res/style.css">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#formations">Parcours</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#loisirs">Loisirs</a></li>
+                <li><a href="#contact">Me Contacter</a></li>
+                <li><a href="res/CV_Lucas_DEJESUSTEIXEIRA_Alternance.pdf" target="_blank" class="download-cv">Télécharger mon CV</a></li>
+            </ul>
+            <ul class="social-icons">
+                <a href="https://www.linkedin.com/in/lucasdjt" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&s" alt="LinkedIn"></a>
+                <a href="https://gitlab.univ-lille.fr/lucas.de-jesus-teixeira.etu" target="_blank"><img src="https://gitlab.univ-lille.fr/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="GitLab"></a>
+                <a href="https://github.com/lucasdjt" target="_blank"><img src="https://github.com/fluidicon.png" alt="GitHub"></a>
+                <a href="mailto:lucasdjtpro@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email"></a>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="accueil" class="section">
+        <div class="card accueil-card animate">
+            <img src="img/lucasdjt_selfiepro.jpg" alt="Photo de Lucas" class="profile-photo">
+                <h1>Bienvenue sur mon Portfolio !</h1>
+                <p>
+                    Je me nomme Lucas DE JESUS TEIXEIRA, j'ai 19 ans, et je suis actuellement étudiant en deuxième année de <strong><a href="#formations">BUT Informatique, parcours Réalisation d'Applications : Conception, Développement, Validation, à l'Université de Lille</a></strong>.
+                    <br> Passionné par l'informatique depuis toujours, je me suis spécialisé dans le développement où je souhaite concrétiser ma passion en créant des projets innovants et concrets.
+                    <br><br> Actuellement, je travaille sur divers projets intégrant des technologies variées comme le <strong><a href="#competence">Java, PostgreSQL, JavaScript et React</a></strong>. Je commence également à <strong>apprendre Angular</strong> pour le développement web et <strong>Python afin d'explorer le domaine de l'intelligence artificielle</strong>.
+                    <br> À travers de divers projets comme la création d'un réseau social en modèle MVC ou la réalisation d'un jeu ressemblant à agar.io, j'ai renforcé mes compétences en travail d'équipe, en gestion de projet et en développement logiciel.
+                    <br><br> Par ailleurs, je vais prochainement effectuer <strong>un stage de plusieurs semaines</strong> afin d'approfondir mes compétences dans un environnement professionnel.
+                    <br><br> Toujours curieux et motivé, je suis à la recherche de nouvelles opportunités pour enrichir mes compétences et collaborer avec des personnes partageant ma passion.
+                    <br><br> Pour en savoir plus, je vous invite à découvrir ce Portfolio ! ;)
+                    <br><br>
+                    <span class="red">Le portfolio va être totalement renové et proposer une meilleure interface utilisant JS et REACT, vous pouvez voir l'avancement depuis ce lien : 
+                    <a href="https://github.com/lucasdjt/lucasdjt.github.io" target="_blank">https://github.com/lucasdjt/lucasdjt.github.io</a></span>
+                    <br><br><br>
+                </p>                
+            <div class="card animate alerte red">
+                <a href="res/CV_Lucas_DEJESUSTEIXEIRA_Alternance.pdf" target="_blank">
+                    <p>
+                        je recherche une <strong>alternance en développement</strong> pour ma 3ᵉ année <strong>(sept. 2025 - août 2026)</strong>. 
+                        Disponible une semaine sur deux en entreprise jusqu’en mars, puis à plein temps.
+                    </p>
+                </a>
+            </div>           
+        </div>
+    </section>
+
+    <section id="competence" class="section">
+        <div class="card animate">
+            <h2>Compétences</h2>
+            <div class="tabs">
+                <button onclick="showSkillTab('hard-skills')">Compétences Techniques</button>
+                <button onclick="showSkillTab('soft-skills')">Savoir-être</button>
+                <button onclick="showSkillTab('langues')">Langues</button>
+            </div>
+
+            <div id="hard-skills" class="tab-content">
+                <h3>Compétences Techniques</h3>
+                <div class="skills-container">
+                    <div class="skill-column">
+                        <h4>Langages de Programmation</h4>
+                        <ul class="skills-list">
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>PostgreSQL</li>
+                            <li>HTML, CSS</li>
+                            <li class="competence-en-cours">Python</li>
+                            <li class="competence-en-cours">Angular</li>
+                            <li>C</li>
+                            <li>Arduino</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <h4>Outils et Technologies</h4>
+                        <ul class="skills-list">
+                            <li>Git (GitHub, GitLab)</li>
+                            <li>JavaFx, Swing</li>
+                            <li>JDBC, JavaEE, JSP</li>
+                            <li>API REST</li>
+                            <li>Bootstrap</li>
+                            <li>Node.js</li>
+                            <li>Outils de Production (Suite Office, Google Drive, Markdown)</li>
+                            <li>Maven</li>
+                            <li>Docker</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <h4>Environnements de Travail</h4>
+                        <ul class="skills-list">
+                            <li>Visual Studio Code</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>AndroidStudio</li>
+                            <li>Windows</li>
+                            <li>Linux</li>
+                            <li>VirtualBox</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="soft-skills" class="tab-content" style="display: none;">
+                <h3>Savoir-être</h3>
+                <table>
+                    <tr><th>Qualité</th><th>Description</th></tr>
+                    <tr><td>Créatif</td><td>Ma créativité est l'un de mes atouts majeurs dans le développement. J'aime trouver de nouvelles idées pour concevoir des projets innovants.</td></tr>
+                    <tr><td>Logique</td><td>J'aborde les problèmes de manière logique, ce qui constitue une force en algorithmique et en résolution de problèmes complexes.</td></tr>
+                    <tr><td>Autonome</td><td>Je suis également capable de travailler de manière autonome, en recherchant par moi-même les informations nécessaires pour avancer efficacement.</td></tr>
+                    <tr><td>Curieux</td><td>Je m'informe régulièrement et me tiens à jour des avancées dans le domaine de l'informatique pour ne pas être obsolète.</td></tr>
+                    <tr><td>Gestion</td><td>Je sais travailler en équipe, coopérer, communiquer efficacement et écouter attentivement. J'ai également été introduit à l'agilité, renforçant ainsi mes compétences dans la gestion d'équipe.</td></tr>
+                </table>
+            </div>            
+            <div id="langues" class="tab-content" style="display: none;">
+                <h3>Langues</h3>
+                <ul>
+                    <li><strong>Français :</strong> Langue maternelle</li>
+                    <li><strong>Anglais :</strong> Niveau B2</li>
+                    <li><strong>Espagnol :</strong> Niveau B1</li>
+                </ul>
+            </div> 
+        </div>           
+    </section>
+        <!-- Section Parcours -->
+        <section id="formations" class="section">
+            <div class="card animate">
+                <h2>Formations</h2>
+                <div class="formation-item">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E0BAQE4TCoGVGb_tw/company-logo_200_200/company-logo_200_200/0/1683019038335/iut_de_lille_logo?e=2147483647&v=beta&t=wyaar0k1HAPvJFpxL3OsNFVNwP0WuRtT1q7CIHd_8No" alt="Logo Université de Lille" class="logo">
+                    <div>
+                        <h3>BUT Informatique, parcours Réalisation d'Applications : Conception, Développement, Validation</h3>
+                        <p><a href="https://iut.univ-lille.fr/" class="university-name" target="_blank">IUT de Lille - Université de Lille, Villeneuve d’Ascq</a></p>
+                        <p>Septembre 2023 - Aujourd'hui</p>
+                        <!--<a href="BUTINFO.html" class="more-info-link">En savoir +</a>-->
+                    </div>
+                </div>
+                <div class="formation-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGFWstgMP_1YdK7u8ULw3I1MJlWtgf0Ezgw&s" alt="Logo Lycée Blaise Pascal" class="logo">
+                    <div>
+                        <h3>BAC STI2D Option Systèmes d'Information et Numérique</h3>
+                        <p><a href="https://www.bpascal.fr/" class="university-name" target="_blank">Lycée Blaise Pascal, Longuenesse</a></p>
+                        <p>Septembre 2021 - Juin 2023</p>
+                        <!--<a href="STI2D.html" class="more-info-link">En savoir +</a>-->
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section" style="display: none;">
+            <div class="card animate">
+                <h2>Expérience</h2>
+                <div class="experience-item">
+                    <h3>Stage à la Cité de l'Agriculture</h3>
+                    <p>À définir plus tard - Système, Réseaux et Cloud</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projets" class="section">
+            <div class="card animate">
+                <h2>Projets</h2>
+                <div class="tabs">
+                    <button onclick="showProjectTab('tous')">Tout afficher</button>
+                    <button onclick="showProjectTab('personnel')">Projets personnels</button>
+                    <button onclick="showProjectTab('professionnel')">Projets professionnels</button>
+                </div>
+                <div id="projets-container">
+                    <div class="project">
+                        <img src="img/projet_portfolio.png" alt="Portfolio" class="imgproject">
+                        <div class="details">
+                            <div class="badges">
+                                <span class="badge badge-en-cours">En cours</span>
+                                <span class="badge badge-professionnel">Professionnel</span>
+                                <span class="badge badge-date">V3 : 27/03/2025-</span>
+                            </div>
+                            <h3 class="titleDonnee">Portfolio</h3>
+                            <p class="tooltip">
+                                Vous pouvez trouver <a href="https://github.com/lucasdjt/Portfolio">ici</a> le portfolio actuelle. Vous pouvez trouver l'avancement du futur portfolio via le lien proposé sur l'icône GITHUB.
+                            </p>
+                            <a href="https://github.com/lucasdjt/lucasdjt.github.io" target="_blank" class="github-link"> 
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Link" class="github-logo" style="width: 50px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/projet_hagario.png" alt="Hagar.io" class="imgproject">
+                        <div class="details">
+                            <div class="badges">
+                                <span class="badge badge-termines">Terminé</span>
+                                <span class="badge badge-professionnel">Professionnel</span>
+                                <span class="badge badge-date">14/03/25-25/03/25</span>
+                            </div>
+                            <h3 class="titleDonnee">Hagar.io</h3>
+                            <p class="tooltip">
+                                Jeu développé en JavaScript, inspiré du célèbre jeu Agar.io, offrant une expérience multijoueur immersive avec des fonctionnalités similaires au jeu original.
+                            </p>
+                            <a href="https://github.com/lucasdjt/Hagario" target="_blank" class="github-link"> 
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Link" class="github-logo" style="width: 50px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/projet_reseaux.png" alt="Dwidder" class="imgproject">
+                        <div class="details">
+                            <div class="badges">
+                                <span class="badge badge-termines">Terminé</span>
+                                <span class="badge badge-professionnel">Professionnel</span>
+                                <span class="badge badge-date">V2 : 09/03/2025-20/03/2025</span>
+                            </div>
+                            <h3 class="titleDonnee">Dwidder - Mon Réseau Social</h3>
+                            <p class="tooltip">
+                                J’ai développé Dwidder, un réseau social inspiré de Twitter et Facebook, utilisant JakartaEE pour le back-end et les JSP pour l'affichage. 
+                                Ce réseau social est connecté à ma base de données PostgreSQL grâce a JDBC. <br> Il permet aux utilisateurs de publier des posts, interagir via des réactions, créer des groupes privés et envoyer des messages. Une base admin et une API REST est intégrée pour faciliter l’interaction avec les données.
+                                <br> Vous pouvez voir mon projet directement sur GitHub ou vous pourrez regarder la vidéo de présentation depuis ce <a href="https://www.youtube.com/watch?v=yf-XB1rcDR0">lien</a>.
+                            </p>
+                            <a href="https://github.com/lucasdjt/Dwidder" target="_blank" class="github-link"> 
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Link" class="github-logo" style="width: 50px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/projet_chess.png" alt="Chess" class="imgproject">
+                        <div class="details">
+                            <div class="badges">
+                                <span class="badge badge-termines">Terminé</span>
+                                <span class="badge badge-personnel">Personnel</span>
+                                <span class="badge badge-date">V2 : 24/01/2024-17/02/2025</span>
+                            </div>
+                            <h3 class="titleDonnee">Chess</a></h3>
+                            <p class="tooltip">
+                                Jouez aux échecs avec cette application disponible sur PC. 
+                                Utilise la méthode MVC, Java et Swing<br>  
+                                Respecte les règles officielles du jeu d'échecs et permet des parties à deux joueurs. 
+                                Projet entièrement réalisé en solo.
+                            </p>
+                            <a href="https://github.com/lucasdjt/Chess" target="_blank" class="github-link"> 
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Link" class="github-logo" style="width: 50px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/projet_classification.png" alt="Classification" class="imgproject">
+                        <div class="details">
+                            <div class="badges">
+                                <span class="badge badge-termines">Terminé</span>
+                                <span class="badge badge-professionnel">Professionnel</span>
+                                <span class="badge badge-date">11/10/2024-29/11/2024</span>
+                            </div>
+                            <h3 class="titleDonnee">Application de classification</a></h3>
+                            <p class="tooltip">
+                                Ce projet propose un outil permettant de charger et d'afficher visuellement un ensemble de données variées. 
+                                Il offre également des fonctionnalités de classification, permettant de comparer et de catégoriser de nouvelles données en fonction des ensembles de données précédemment chargés. 
+                                Grâce à cet outil, les utilisateurs peuvent analyser efficacement les informations qu'ils veulent. <br>
+                                Utilisation du modèle MVC, de JavaFx, de la mise en place de la qualité de développement, d'analyses et du travail de groupe.
+                                Projet réalisé dans une équipe de 4 personnes.
+                            </p>
+                            <a href="https://github.com/lucasdjt/Classification" target="_blank" class="github-link"> 
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Link" class="github-logo" style="width: 50px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/projet_agile.png" alt="Agile" class="imgproject">
+                        <div class="details">
+                            <div class="badges">
+                                <span class="badge badge-termines">Terminé</span>
+                                <span class="badge badge-professionnel">Professionnel</span>
+                                <span class="badge badge-date">02/09/2024-05/09/2024</span>
+                            </div>
+                            <h3 class="titleDonnee">Jeu en méthodologie Agile</h3>
+                            <p class="tooltip">
+                                Projet pour introduire l'agilité avec des sprints de 2h durant 1 semaine, en utilisant Java et la méthode SCRUM (Agile), réalisé dans une équipe de 6 personnes.
+                            </p>
+                            <a href="https://github.com/lucasdjt/MiniAgile" target="_blank" class="github-link"> 
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Link" class="github-logo" style="width: 50px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/projet_ludo.png" alt="Ludique" class="imgproject">
+                        <div class="details">
+                            <div class="badges">
+                                <span class="badge badge-termines">Terminé</span>
+                                <span class="badge badge-professionnel">Professionnel</span>
+                                <span class="badge badge-date">05/11/2023-21/12/2023</span>
+                            </div>
+                            <h3 class="titleDonnee">Jeu ludoéducatif</h3>
+                            <p class="tooltip">Le jeu se nomme EduFight. L'objectif est de battre un adversaire (robot ou joueur) à l'aide de vos connaissances, répondre à des questions et infliger des dégâts pour vos bonnes réponses.
+                                Vous pouvez aussi acquérir des bonus et choisir la difficulté de l'ordinateur. L'enseignant peut aussi ajouter ou supprimer des questions.
+                                Utilisation d'un Java simplifié, permettant d'introduire le travail d'équipe, le Java, l'algorithmique et la résolution de problèmes.
+                                Projet réalisé en binôme.
+                            </p>
+                            <a href="https://github.com/lucasdjt/EduFight" target="_blank" class="github-link"> 
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Link" class="github-logo" style="width: 50px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="loisirs" class="section">
+            <div class="card animate">
+                <h2>Loisirs</h2>
+                <div class="loisir">
+                    <img src="img/loisir_echecs.jpg" alt="Loisir 1" class="imgproject">
+                    <div class="details">
+                        <h3 class="titleDonnee">Échecs</h3>
+                        <p class="tooltip"><strong>Échecs : </strong>Depuis l'enfance, je pratique les échecs qui sont devenus une réelle passion pour moi.
+                            C'est un sport qui nécessite beaucoup de réflexion, de stratégie, de concentration et d'anticipation.
+                        </p>
+                    </div>
+                </div>
+                <div class="loisir">
+                    <img src="img/loisir_djing.jpg" alt="Loisir 2" class="imgproject">
+                    <div class="details">
+                        <h3 class="titleDonnee">DJing</h3>
+                        <p class="tooltip"><strong>DJing : </strong>Passion née ces dernières années, je me suis investi dans le DJing pour partager mon univers musical et faire vibrer les autres.
+                            Grâce à des outils comme Rekordbox, SeratoDJ et FL Studio, je prépare et réalise mes sets et mes remix avec soin, avec une base solide en autodidacte.
+                        </p>
+                    </div>
+                </div>
+                <div class="loisir">
+                    <img src="img/loisir_jeuvideo.png" alt="Loisir 3" class="imgproject">
+                    <div class="details">
+                        <h3 class="titleDonnee">Jeux vidéo</h3>
+                        <p class="tooltip"><strong>Jeux vidéo : </strong>
+                            Les jeux vidéo représentent pour moi bien plus qu’un simple divertissement : ils ont été une source de créativité et d'imagination à travers des jeux 
+                            de construction comme Minecraft, que ce soit au niveau de leur interface, des mécaniques de gameplay ou de leur algorithmique.
+                        </p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="card animate">
+                <h2>Informations et Contact :</h2>
+                <p><strong>Âge :</strong> 19 ans</p>
+                <p>Permis B</p>
+                <p><strong>Localisation :</strong> Villeneuve d'Ascq, France</p>
+                <p><strong>Email professionnel :</strong> <a href="mailto:lucasdjtpro@gmail.com">lucasdjtpro@gmail.com</a></p>
+                <p><strong>Email universitaire :</strong> <a href="mailto:lucas.de-jesus-teixeira.etu@univ-lille.fr">lucas.de-jesus-teixeira.etu@univ-lille.fr</a></p>
+                <p><a href="https://gitlab.univ-lille.fr/lucas.de-jesus-teixeira.etu" target="_blank">GitLab</a></p>
+                <p><a href="https://github.com/lucasdjt" target="_blank">GitHub</a></p>
+                <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="lucasdjt" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/lucasdjt?trk=profile-badge">Lucas De Jesus Teixeira</a></div>
+                <a href="res/CV_Lucas_DEJESUSTEIXEIRA_Alternance.pdf" target="_blank"><button type="button">Télécharger Mon CV</button></a>
+            </div>
+        </section>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Lucas De Jesus Teixeira. Tous droits réservés.</p>
+                <ul class="social-icons">
+                    <a href="https://www.linkedin.com/in/lucasdjt" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&s" alt="LinkedIn"></a>
+                    <a href="https://gitlab.univ-lille.fr/lucas.de-jesus-teixeira.etu" target="_blank"><img src="https://gitlab.univ-lille.fr/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="GitLab"></a>
+                    <a href="https://github.com/lucasdjt" target="_blank"><img src="https://github.com/fluidicon.png" alt="GitHub"></a>
+                    <a href="mailto:lucasdjtpro@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email"></a>
+                </ul>
+                <p><a href="https://github.com/lucasdjt/Portfolio" target="_blank">Code source de la page</a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="res/script.js" defer></script>
+</body>
+</html>
